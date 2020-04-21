@@ -1,11 +1,11 @@
-var express = require('express')
-var sha256 = require('js-sha256')
-var app = express()
-var http = require('http').Server(app)
-var io = require('socket.io')(http)
-var path = require('path')
-var fs = require('fs')
-var port = process.env.PORT || 5000
+const express = require('express')
+const sha256 = require('js-sha256')
+const app = express()
+const http = require('http').Server(app)
+const io = require('socket.io')(http)
+const path = require('path')
+const fs = require('fs')
+const port = process.env.PORT || 5000
 
 Sessions = {}
 
