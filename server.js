@@ -23,7 +23,7 @@ class Session {
   }
 } 
 
-var filterHTML = function(string){
+function filterHTML(string){
     return string.replace(/>/g,"&gt;").replace(/</g,"&lt;").replace("javascript:","javascript˸")
 }
 
