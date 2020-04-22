@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/socket.js"></script>
+    
+    <title>Anonyma</title>
+</head>
+<body>
+    <div class="centered">
+	<label id=status></label>
+	<br><br>
+        <div class="find_partner">
+            <label>Your ID:</label>
+            <h3 class="id"></h3>
+            <br><br>
+            <input id="PID" placeholder="Partner ID" style="text-align: center;"> </br>
+            <button onclick="requestPartner($('#PID').val())">Send</button>
+        </div>
+	<div class="chat">
+        <div class="mscroll">
+		    <span id="messages"></span>
+	    </div>
+	    <textarea id="input"></textarea>
+        <button onclick="sendMessage('#input')">Send</button>
+        </div>
+    </div>
+</body>
+</html>
